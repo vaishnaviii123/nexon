@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React,{useEffect} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -61,6 +61,10 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(()=>{
+    console.log('vaishnavi')
+  })
 
   return (
     <SafeAreaView style={backgroundStyle}>
